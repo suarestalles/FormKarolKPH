@@ -1,0 +1,20 @@
+@import url(./reset.css);
+@import url(./style.css);
+
+body {
+    background: #eee;
+}
+
+.main-content {
+    padding: 50px;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #ed0004;
+}

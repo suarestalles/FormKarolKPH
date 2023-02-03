@@ -1,0 +1,37 @@
+input[type="submit"] {
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    width: 300px;
+    height: 50px;
+    margin: 30px 0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.1);
+    background: blue;
+}
+
+.btn {
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.addProduct {
+    background: #0f0;
+}
+
+.deleteProduct {
+    background: #ed0004;
+    color: #fff;
+}

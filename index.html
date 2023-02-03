@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Formulário | Karol Photography</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Logomarca, Marca, Negócio, Empresa">
+        <meta name="author" content="Talles Suares">
+
+        <link rel="stylesheet" href="css./style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="presentation">
+                <div class="header-img">
+                    <img src="./images/profileAdjust.png" alt="Foto de Karoline Lima">
+                </div>
+                <h1>Olá, me chamo Karoline Lima.</h1>
+                <h3>Aqui você irá desenvolver a sua marca comigo de uma maneira mais fácil e criativa.</h3>
+                <h3>Para que isso aconteça, preciso que responda algumas perguntas...</h3>
+            </div>
+        </header>
+
+        <section class="main-content">
+            <form action="https://formsubmit.co/k.limaalves1390@gmail.com" method="POST">
+                <h2>Me informe seus dados para contato!</h2>
+                <div class="data-client">
+                    <label for="nome"></label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+    
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+    
+                    <label for="telefone"></label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone Ex.: 064-12345-6789" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" required>
+                </div>
+                <h2>Vamos às perguntas...</h2>
+                <label for="question1">1 - O que você deseja que sua logomarca traga como mensagem para seu público?</label>
+                <input type="text" name="mensagemDaLogomarca" id="question1" placeholder="Digite sua resposta aqui" required>
+
+                <label for="question2">2 - Quanto tempo você atua no seu mercado de trabalho?</label>
+                <input type="month" name="tempoNoMercado" id="question2" placeholder="Digite sua resposta aqui" required>
+
+                <label for="question3">3 - Quando se fala de cores me cite duas que acha que pode representar você e sua marca:</label>
+                <input type="color" name="cor1" id="color1" required>
+                <input type="color" name="cor2" id="color2" required>
+
+                <label for="question4">4 - Descreva sobre qual a sua principal função e atuação no mercado de trabalho:</label>
+                <input type="text" name="principalAtuacao" id="question4" placeholder="Digite sua resposta aqui" required>
+
+                <label for="question5">5 - Qual símbolo você acha que representa você no mercado de trabalho, digo símbolo que remete o que desenvolve?</label>
+                <input type="text" name="simboloNoMercado" id="question5" placeholder="Digite sua resposta aqui" required>
+
+                <label for="question6">6 - Para você o que não pode faltar na sua marca e logomarca?</label>
+                <input type="text" name="indispensavelNaMarca" id="question6" placeholder="Digite sua resposta aqui" required>
+
+                <label for="question7">7 - Quais produtos você deseja aplicar a sua logomarca? Ex.: Canecas, chapéus, canetas, uniformes, etc.</label>
+                <input type="text" name="produtos" id="question7" placeholder="Digite o nome do produto">
+                <input type="button" class="addProduct btn" id="addProduct" value="+ Adicionar Produto">
+
+                <ul id="listaProdutos">
+                </ul>
+                
+                <input type="button" onclick="deleteProduct()" class="deleteProduct btn" value="- Remover Último Produto">
+                
+                <input type="hidden" name="_next" value="https://logodakarolkph.netlify.app/thanks.html">
+                
+                <input type="submit" value="Enviar respostas" class="button-default">
+            </form>
+        </section>
+
+        <footer>
+            <img src="./images/profile01.jpeg" alt="Logomarca Karol Photography">
+            <h3>Siga-me nas Redes Sociais:</h3>
+            <div class="contact">
+                <a href="https://instagram.com/dakarolkph?igshid=Zjc2ZTc4Nzk=" target="_blank"><img src="./images/instagramIcon.svg" alt="ícone do Instagram"></a>
+                <a href="https://www.tiktok.com/@dakarolkph?_t=8ZVs2cJFCI2&_r=1" target="_blank"><img src="./images/tiktokIcon.svg" alt="ícone do TikTok"></a>
+                <a href="https://www.facebook.com/profile.php?id=100069695315747&mibextid=LQQJ4d" target="_blank"><img src="./images/facebookIcon.svg" alt="ícone do Facebook"></a>
+                <a href="https://pin.it/9t0T8b1" target="_blank"><img src="./images/pinterestIcon.svg" alt="ícone do Pinterest"></a>
+            </div>
+        </footer>
+
+        <script src="./js/scipt.js"></script>
+
+    </body>
+</html>
